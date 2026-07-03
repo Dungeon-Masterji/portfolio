@@ -3,6 +3,7 @@ import "./Certifications.css";
 import { Fade } from "react-reveal";
 import { certifications } from "../../portfolio";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
+import CertificationStack from "../../components/certificationCard/CertificationStack";
 
 class Certifications extends Component {
   render() {
@@ -17,8 +18,15 @@ class Certifications extends Component {
           </Fade>
         </div>
         <div className="certs-body-div">
-          {certifications.certifications.map((cert) => {
-            return <CertificationCard certificate={cert} theme={theme} />;
+          {certifications.certifications.map((cert, idx) => {
+            if (cert.isStack) {
+              return (
+                <CertificationStack key={idx} stack={cert} theme={theme} />
+              );
+            }
+            return (
+              <CertificationCard key={idx} certificate={cert} theme={theme} />
+            );
           })}
         </div>
       </div>

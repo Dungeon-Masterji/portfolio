@@ -4,6 +4,7 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
+import Signature from "../../assets/images/sign.svg";
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
@@ -23,11 +24,19 @@ const Header = ({ theme }) => {
       <div>
         <header className="header">
           <NavLink to={link} tag={Link} className="logo">
-            <span style={{ color: theme.text }}> &lt;</span>
-            <span className="logo-name" style={{ color: theme.text }}>
-              {greeting.logo_name}
+            <span className="logo-bracket" style={{ color: theme.text }}>
+              &lt;
             </span>
-            <span style={{ color: theme.text }}>/&gt;</span>
+
+            <img
+              src={Signature}
+              alt="Aditya Raj"
+              className="header-signature"
+            />
+
+            <span className="logo-bracket" style={{ color: theme.text }}>
+              /&gt;
+            </span>
           </NavLink>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn">

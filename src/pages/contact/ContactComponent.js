@@ -9,6 +9,7 @@ import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
+import TalkingOnPhone from "../../assets/images/talking_on_phone.svg";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
@@ -26,8 +27,9 @@ class Contact extends Component {
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
                 <img
-                  src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
-                  alt=""
+                  src={TalkingOnPhone}
+                  alt="Contact"
+                  className="contact-image"
                 />
               </div>
               <div className="contact-heading-text-div">

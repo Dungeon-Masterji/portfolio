@@ -8,10 +8,14 @@
 }
 
 .software-skill-inline {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
   margin-right: 20px;
   margin-bottom: 20px;
   font-family: "Google Sans Regular";
+  vertical-align: middle;
 }
 
 .software-skill-inline > i {
@@ -24,4 +28,43 @@
 
 .skill-image {
   height: 48px;
+}
+
+/* Real inline SVG components (Path 2 in SoftwareSkill.js) */
+.skill-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  flex-shrink: 0;
+}
+
+.skill-svg svg {
+  height: 100%;
+  width: 100%;
+  max-height: 48px;
+  max-width: 48px;
+  display: block;
+}
+
+/* PNG/JPG fallback rendered as a background-image (Path 3) */
+.skill-image-bg {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Iconify icons already size themselves via font-size on .dev-icons,
+   this just keeps them centered in the same fixed box as the others */
+.software-skill-inline > .iconify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
 }

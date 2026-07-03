@@ -1,6 +1,7 @@
 import React from "react";
 import "./SoftwareSkill.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { customIcons } from "./customIcons";
 
 class SoftwareSkill extends React.Component {
   render() {
@@ -8,14 +9,13 @@ class SoftwareSkill extends React.Component {
       <div>
         <div className="software-skills-main-div">
           <ul className="dev-icons">
-            {/* {skillsSection.softwareSkills.map(skills => {
-            return (
-              <li className="software-skill-inline" name={skills.skillName}>
-                <i className={skills.fontAwesomeClassname}></i>
-              </li>
-            );
-          })} */}
             {this.props.logos.map((logo) => {
+              // Only set when portfolio.js gives a `component` key that
+              // matches a real inline SVG registered in customIcons.js
+              const CustomIcon = logo.component
+                ? customIcons[logo.component]
+                : null;
+
               return (
                 <OverlayTrigger
                   key={logo.skillName}
@@ -27,6 +27,7 @@ class SoftwareSkill extends React.Component {
                   }
                 >
                   <li className="software-skill-inline" name={logo.skillName}>
+                    {/* Path 1: Iconify — already inline SVG, unchanged */}
                     {logo.fontAwesomeClassname && (
                       <span
                         className="iconify"
@@ -35,14 +36,32 @@ class SoftwareSkill extends React.Component {
                         data-inline="false"
                       ></span>
                     )}
-                    {!logo.fontAwesomeClassname && logo.imageSrc && (
-                      <img
-                        className="skill-image"
-                        style={logo.style}
-                        src={`${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`}
-                        alt={logo.skillName}
-                      />
+
+                    {/* Path 2: real .svg converted to a React component —
+                        true inline SVG, behaves exactly like Iconify */}
+                    {!logo.fontAwesomeClassname && CustomIcon && (
+                      <span className="skill-svg" style={logo.style}>
+                        <CustomIcon />
+                      </span>
                     )}
+
+                    {/* Path 3: PNG/JPG fallback — rendered as a CSS
+                        background-image on a span instead of <img>, so
+                        there's no image element for the browser to show
+                        "Open Image" / "Save Image As" on */}
+                    {!logo.fontAwesomeClassname &&
+                      !CustomIcon &&
+                      logo.imageSrc && (
+                        <span
+                          className="skill-image-bg"
+                          role="img"
+                          aria-label={logo.skillName}
+                          style={{
+                            ...logo.style,
+                            backgroundImage: `url(${process.env.PUBLIC_URL}/skills/${logo.imageSrc})`,
+                          }}
+                        ></span>
+                      )}
                   </li>
                 </OverlayTrigger>
               );

@@ -11,21 +11,21 @@ class OrganizationList extends Component {
           {this.props.logos.map((logo) => {
             return (
               <OverlayTrigger
-                key={logo["login"]}
+                key={logo["name"]}
                 placement={"top"}
                 style={{ marginBottom: "5px" }}
                 overlay={
                   <Tooltip id={`tooltip-top`}>
-                    <strong>{logo["login"]}</strong>
+                    <strong>{logo["name"]}</strong>
                   </Tooltip>
                 }
               >
-                <li className="organizations-inline" name={logo["login"]}>
+                <li className="organizations-inline" name={logo["name"]}>
                   <Fade bottom duration={2000} distance="40px">
                     <img
                       className="organizations-img"
-                      src={logo["avatarUrl"]}
-                      alt={logo["login"]}
+                      src={require("../../assets/images/" + logo["image"])}
+                      alt={logo["name"]}
                     />
                   </Fade>
                 </li>

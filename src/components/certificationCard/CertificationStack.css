@@ -1,0 +1,129 @@
+.cert-stack {
+  width: 30%;
+  flex: 0 0 30%;
+  border: 1px solid #d9dbdf;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #d9dbdf;
+  margin-bottom: 30px;
+  background: #fff;
+  overflow: hidden;
+  align-self: flex-start;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.cert-stack--open {
+  box-shadow: 7px 7px 10px #c7cad0;
+}
+
+.cert-stack-toggle {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+  font: inherit;
+}
+
+/* Mirrors .cert-header + .logo_img from CertificationCard.css so the
+   closed size lines up exactly with the other cards in the grid */
+.cert-stack-header {
+  position: relative;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.cert-stack-logo {
+  margin: 3px;
+  width: auto;
+  height: 100px;
+}
+
+.cert-stack-chevron {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 16px;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cert-stack-chevron--open {
+  transform: rotate(180deg);
+}
+
+/* Mirrors .cert-body / .cert-body-title / .cert-body-subtitle */
+.cert-stack-body {
+  margin: 0;
+}
+
+.cert-stack-title {
+  font-family: "Google Sans Regular";
+  font-size: 20px;
+  margin: 10px;
+}
+
+.cert-stack-subtitle {
+  font-family: "Google Sans Regular";
+  font-size: 18px;
+  margin: 10px;
+}
+
+.cert-stack-drawer {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.cert-stack-list {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.cert-stack-item + .cert-stack-item {
+  border-top: 1px solid #eee;
+}
+
+.cert-stack-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.cert-stack-link:hover {
+  background: #f5f6f8;
+}
+
+.cert-stack-item-index {
+  font-family: monospace;
+  font-size: 12px;
+  color: #999;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.cert-stack-item-title {
+  flex: 1;
+  text-align: left;
+  font-family: "Google Sans Regular";
+  font-size: 14px;
+}
+
+.cert-stack-item-arrow {
+  font-size: 14px;
+  color: #999;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .cert-stack {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}

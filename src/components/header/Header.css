@@ -30,19 +30,24 @@
   /* background-color: #A6E1FA; */
 }
 
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 1.5em;
-  text-decoration: none;
-  margin-top: 10px;
-  line-height: normal;
+.logo {
+  display: flex;
+  align-items: center; /* <-- aligns everything vertically */
+  gap: 8px;
 }
-.header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bold;
-  padding: 0 10px;
-  /* color: #55198b; */
+
+.logo-bracket {
+  font-size: 2rem; /* adjust as needed */
+  font-weight: 400;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-signature {
+  height: 85px; /* try 36–48px */
+  width: auto;
+  display: block;
 }
 
 /* menu */

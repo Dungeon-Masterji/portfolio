@@ -11,6 +11,13 @@
   display: flex;
 }
 
+.experience-image {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+}
+
 .experience-heading-div > * {
   flex: 1;
 }
