@@ -1,3 +1,12 @@
 {
-  "data": []
+  "data": [
+    {
+      "name": "Meshrey",
+      "image": "meshery-logo-dark-text-side.svg"
+    },
+    {
+      "name": "Layer5",
+      "image": "layer5-dark-bg.svg"
+    }
+  ]
 }
