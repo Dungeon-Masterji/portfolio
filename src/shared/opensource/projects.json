@@ -1,11 +1,11 @@
 {
   "data": [
     {
-      "id": "R_kgDOSOon9A",
-      "name": "manipulating_diffusion_path",
-      "createdAt": "2026-04-28T07:41:32Z",
-      "url": "https://github.com/Dungeon-Masterji/manipulating_diffusion_path",
-      "description": null,
+      "id": "R_kgDOVpmcmA",
+      "name": "Sentinel Grid",
+      "createdAt": "2026-11-10T16:24:28Z",
+      "url": "https://github.com/Dungeon-Masterji/sentinel-grid",
+      "description": "Tri-signal early-warning system for population and workforce health in the UAE. Fuses clinical, environmental and occupational signals (Prophet baselines, PyOD anomaly ensemble, Bayesian fusion with 90% CIs). Every alert is explained with TreeSHAP drivers and a validated LLM narrative in English and Arabic, then routed via n8n to the public-health role who must act. Backtested on 11 real 2023–24 UAE events: alerts land in real event windows up to 4.7× more often than chance.",
       "isFork": false,
       "languages": [
         {
@@ -13,8 +13,70 @@
           "iconifyClass": "logos-python"
         },
         {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
           "name": "Shell",
           "iconifyClass": "simple-icons:shell"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOUSsp9Q",
+      "name": "HeartGuard AI",
+      "createdAt": "2026-09-08T18:49:14Z",
+      "url": "https://github.com/Dungeon-Masterji/heart-disease-voting-ensemble",
+      "description": "Clinical decision-support tool on the UCI Heart Disease dataset. Hard/soft voting ensembles with leakage-safe preprocessing and nested stratified 5-fold CV; threshold chosen to keep sensitivity ≥ 0.90. Sensitivity 0.902 · Specificity 0.797 · ROC AUC 0.908. Served via FastAPI + a clinician-facing React UI, with a model card and Dockerized backend.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos-jupyter"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOUrU59Q",
+      "name": "SupplyChainOS",
+      "createdAt": "2026-09-25T13:58:39Z",
+      "url": "https://github.com/Dungeon-Masterji/supplychainos",
+      "description": "Governed natural-language analytics agent on a Snowflake Semantic View + Cortex Agent. Raised strict accuracy from 40% to 90% on a 30-question gold set by analysing every failure — the same evaluation discipline I apply to clinical models.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOSOon9A",
+      "name": "Diffusion Image Editing (MDP)",
+      "createdAt": "2026-04-28T07:41:32Z",
+      "url": "https://github.com/Dungeon-Masterji/manipulating_diffusion_path",
+      "description": "Implemented all four algorithms from the MDP research paper (the reference repo covered one) for text-guided image editing with Stable Diffusion, with Gradio apps for real and synthetic images.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
         },
         {
           "name": "Jupyter Notebook",
@@ -23,100 +85,16 @@
       ]
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkxMzY0MTEwMDg=",
-      "name": "layer5",
-      "createdAt": "2018-06-07T02:30:12Z",
-      "url": "https://github.com/layer5io/layer5",
-      "description": "Layer5, expect more from your infrastructure",
+      "id": "R_kgDOSMmENA",
+      "name": "Multi-Agent Content Creator",
+      "createdAt": "2026-04-25T20:53:40Z",
+      "url": "https://github.com/Dungeon-Masterji/Social-Media-Content-Creator-GenAI",
+      "description": "Four cooperating LangGraph agents (strategy, writer, SEO, reviewer) on Llama 3.1 via Groq, with a quality-control loop that sends drafts back for revision.",
       "isFork": false,
       "languages": [
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
           "name": "Python",
           "iconifyClass": "logos-python"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOTRkneg",
-      "name": "airflow",
-      "createdAt": "2026-07-08T11:13:28Z",
-      "url": "https://github.com/Dungeon-Masterji/airflow",
-      "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
-      "isFork": true,
-      "languages": [
-        {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Java",
-          "iconifyClass": "logos-java"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOTRkq9w",
-      "name": "datahub",
-      "createdAt": "2026-07-08T11:14:24Z",
-      "url": "https://github.com/Dungeon-Masterji/datahub",
-      "description": "The Context Platform for your Data and AI Stack",
-      "isFork": true,
-      "languages": [
-        {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Java",
-          "iconifyClass": "logos-java"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
         }
       ]
     },
@@ -125,30 +103,16 @@
       "name": "TravelStack",
       "createdAt": "2026-07-22T05:35:03Z",
       "url": "https://github.com/Dungeon-Masterji/TravelStack",
-      "description": null,
+      "description": "Multi-source ETL with rule-based validation that flagged 32% of raw records for quality issues, exposed over a FastAPI service and orchestrated with Airflow — the kind of data cleaning messy health records need too.",
       "isFork": false,
       "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
         {
           "name": "Dockerfile",
           "iconifyClass": "simple-icons:docker"
-        },
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOSMmENA",
-      "name": "Social-Media-Content-Creator-GenAI",
-      "createdAt": "2026-04-25T20:53:40Z",
-      "url": "https://github.com/Dungeon-Masterji/Social-Media-Content-Creator-GenAI",
-      "description": null,
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
         }
       ]
     }

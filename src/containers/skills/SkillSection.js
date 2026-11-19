@@ -31,9 +31,7 @@ class SkillSection extends Component {
     return (
       <div>
         {skills.data.map((skill, i) => {
-          const imageOnRight =
-            skill.title === "Data Engineering" ||
-            skill.title === "UI/UX Design";
+          const imageOnRight = i % 2 === 1;
 
           return (
             <div key={i} className="skills-main-div">

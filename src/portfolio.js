@@ -7,11 +7,11 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Aditya's Portfolio",
+  title: "Aditya Raj | Healthcare AI/ML Engineer",
   description:
-    "Third-year CS student who gets pulled toward the messy, operational side of data where raw enterprise information has to become something people can actually act on. Lately that's meant working deeply with Palantir Foundry, ontology design, and PySpark pipelines.",
+    "Healthcare AI/ML engineer building clinical decision-support models and population-health early-warning systems: sensitivity-first risk scoring, explainable alerts with SHAP + LLMs, and privacy-by-design health data pipelines.",
   og: {
-    title: "Aditya Raj Portfolio",
+    title: "Aditya Raj | Healthcare AI/ML Engineer",
     type: "website",
     url: "http://dungeonmasterji.me/",
   },
@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "Aditya Raj",
   nickname: "dungeonmasterji",
   subTitle:
-    "Third-year CS student who gets pulled toward the messy, operational side of data where raw enterprise information has to become something people can actually act on. Lately that's meant working deeply with Palantir Foundry, ontology design, and PySpark pipelines.",
+    "Healthcare AI/ML engineer building clinical decision-support and population-health ML systems that are explainable, honestly evaluated and privacy-safe.",
   resumeLink:
     "https://drive.google.com/file/d/1AUfkKhqOp9Oy1PLijooTxD7MsFehhuBo/view?usp=sharing",
   portfolio_repository: "https://github.com/Dungeon-Masterji/portfolio",
@@ -78,197 +78,177 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Palantir Foundry Engineering",
+      title: "Clinical Machine Learning",
       fileName: "DataScienceImg",
       skills: [
-        "• Building the ontology and operational layer that lets AI agents act reliably on enterprise data",
-        "• Designing not just dashboards, but systems that make decisions and take actions using Palantir Foundry and AIP Builder.",
-        "• Building governed data pipelines, operational applications, and AI workflows.",
-        "• Developing PySpark transforms, SQL logic, Functions, and business applications.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Foundry",
-          imageSrc: "image.png",
-        },
-        {
-          skillName: "Ontology",
-          imageSrc: "Ontology.svg",
-        },
-        {
-          skillName: "AIP",
-          imageSrc: "AIP.png",
-        },
-        {
-          skillName: "Data Pipelines",
-          imageSrc: "data-pipeline.png",
-        },
-        {
-          skillName: "Code Repositories",
-          imageSrc: "folder.png",
-        },
-      ],
-    },
-    {
-      title: "Data Engineering",
-      fileName: "ProjectsImg",
-      //fileName: "FullStackImg",
-      skills: [
-        "• Designing scalable ETL/ELT pipelines for structured enterprise data.",
-        "• Applying data quality, validation, transformation, and schema modeling techniques.",
-        "• Building production-ready data workflows using Python and SQL.",
+        "• Building clinical decision-support models for risk flagging, tuned sensitivity-first so high-risk patients are not missed (HeartGuard AI: sensitivity 0.902, ROC AUC 0.908).",
+        "• Leakage-safe preprocessing, nested stratified cross-validation, ensemble methods, and threshold selection that encodes clinical priorities.",
+        "• Time-series forecasting and anomaly detection for population-health surveillance with Prophet, PyOD ensembles and Bayesian signal fusion.",
+        "• Writing model cards, data dictionaries and ADRs that make limitations as clear as headline metrics.",
       ],
       softwareSkills: [
         {
           skillName: "Python",
           fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
+          style: { backgroundColor: "transparent", color: "#3776AB" },
         },
         {
-          skillName: "SQL",
-          fontAwesomeClassname: "material-symbols:sql",
-          style: {
-            color: "#000000",
-          },
+          skillName: "scikit-learn",
+          fontAwesomeClassname: "simple-icons:scikitlearn",
+          style: { color: "#F7931E" },
         },
         {
-          skillName: "Spark",
-          fontAwesomeClassname: "logos:apache-spark",
-          style: {
-            color: "#E34F26",
-          },
+          skillName: "PyTorch",
+          fontAwesomeClassname: "logos:pytorch-icon",
+          style: {},
         },
         {
-          skillName: "ETL",
-          fontAwesomeClassname: "gcp:datastream",
-          style: {
-            color: "#262fe3",
-          },
+          skillName: "LightGBM",
+          fontAwesomeClassname: "mdi:tree-outline",
+          style: { color: "#02569B" },
         },
         {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: {
-            color: "#1572B6",
-          },
+          skillName: "pandas",
+          fontAwesomeClassname: "simple-icons:pandas",
+          style: { color: "#150458" },
         },
         {
-          skillName: "Digital Ocean",
-          fontAwesomeClassname: "devicon:digitalocean",
-          style: {
-            color: "#1572B6",
-          },
+          skillName: "NumPy",
+          fontAwesomeClassname: "simple-icons:numpy",
+          style: { color: "#013243" },
+        },
+        {
+          skillName: "Jupyter",
+          fontAwesomeClassname: "logos:jupyter",
+          style: {},
+        },
+      ],
+    },
+    {
+      title: "Explainable & Responsible Health AI",
+      fileName: "ProjectsImg",
+      skills: [
+        "• Explaining every prediction and alert with TreeSHAP drivers and grounded LLM narratives (English and Arabic), validated for numbers, schema and urgency.",
+        "• Evaluating honestly: calibration and Brier scores, backtesting with zero lookahead, and comparing results against chance baselines instead of quoting headline numbers.",
+        "• Privacy-by-design health data: aggregate-only signals, small-cell suppression (< 5 records), synthetic Synthea populations, and no personal data in LLM prompts.",
+      ],
+      softwareSkills: [
+        {
+          skillName: "SHAP",
+          fontAwesomeClassname: "mdi:chart-waterfall",
+          style: { color: "#8B5CF6" },
+        },
+        {
+          skillName: "Synthea (synthetic patients)",
+          fontAwesomeClassname: "mdi:account-heart-outline",
+          style: { color: "#E11D48" },
+        },
+        {
+          skillName: "Model Cards",
+          fontAwesomeClassname: "mdi:card-text-outline",
+          style: { color: "#0F766E" },
+        },
+        {
+          skillName: "Calibration & Backtesting",
+          fontAwesomeClassname: "mdi:chart-bell-curve-cumulative",
+          style: { color: "#0E7490" },
+        },
+        {
+          skillName: "Privacy by Design",
+          fontAwesomeClassname: "mdi:shield-lock-outline",
+          style: { color: "#16A34A" },
+        },
+      ],
+    },
+    {
+      title: "GenAI & LLM Agents",
+      fileName: "FullStackImg",
+      skills: [
+        "• Building LLM-powered workflows that turn model output into structured, actionable guidance with schema validation and template fallbacks.",
+        "• Multi-agent systems with LangGraph and LangChain, including review loops that send drafts back for revision.",
+        "• Evaluation-driven agent development: raised a governed analytics agent from 40% to 90% strict accuracy on a 30-question gold set.",
+      ],
+      softwareSkills: [
+        {
+          skillName: "LangChain",
+          fontAwesomeClassname: "simple-icons:langchain",
+          style: { color: "#1C3C3C" },
+        },
+        {
+          skillName: "LangGraph",
+          fontAwesomeClassname: "mdi:graph-outline",
+          style: { color: "#1C3C3C" },
+        },
+        {
+          skillName: "Groq / Llama",
+          fontAwesomeClassname: "simple-icons:meta",
+          style: { color: "#0467DF" },
+        },
+        {
+          skillName: "Snowflake Cortex",
+          fontAwesomeClassname: "simple-icons:snowflake",
+          style: { color: "#29B5E8" },
+        },
+        {
+          skillName: "Hugging Face / Stable Diffusion",
+          fontAwesomeClassname: "simple-icons:huggingface",
+          style: { color: "#FFD21E" },
+        },
+        {
+          skillName: "Streamlit",
+          fontAwesomeClassname: "simple-icons:streamlit",
+          style: { color: "#FF4B4B" },
+        },
+      ],
+    },
+    {
+      title: "Model Serving & MLOps",
+      fileName: "CloudInfraImg",
+      skills: [
+        "• Serving models through FastAPI + Pydantic APIs with clinician-facing React / Next.js frontends.",
+        "• Scheduled ML pipelines on GitHub Actions, Dockerized runtimes, and deployments on Azure and Vercel.",
+        "• Alert routing and escalation with n8n, audit trails, and 125+ automated tests covering fusion, explainability and backtests.",
+      ],
+      softwareSkills: [
+        {
+          skillName: "FastAPI",
+          fontAwesomeClassname: "simple-icons:fastapi",
+          style: { color: "#009688" },
         },
         {
           skillName: "Docker",
           fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
-        },
-      ],
-    },
-    {
-      title: "Software Engineering & Cloud",
-      fileName: "FullStackImg",
-      //fileName: "CloudInfraImg",
-      skills: [
-        "• Developing software solutions using Python, JavaScript, and modern development tools.",
-        "• Building REST APIs and implementing backend application logic.",
-        "• Experience contributing to open-source cloud-native projects.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML",
-          fontAwesomeClassname: "material-icon-theme:html",
-          style: {
-            color: "#CC6699",
-          },
+          style: { color: "#1488C6" },
         },
         {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
+          skillName: "Azure",
+          fontAwesomeClassname: "simple-icons:microsoftazure",
+          style: { color: "#0078D4" },
         },
         {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
+          skillName: "GitHub Actions",
+          fontAwesomeClassname: "simple-icons:githubactions",
+          style: { color: "#2088FF" },
+        },
+        {
+          skillName: "n8n",
+          fontAwesomeClassname: "simple-icons:n8n",
+          style: { color: "#EA4B71" },
         },
         {
           skillName: "ReactJS",
           fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
+          style: { color: "#61DAFB" },
         },
         {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
-          style: {
-            color: "#339933",
-          },
+          skillName: "SQL",
+          fontAwesomeClassname: "material-symbols:sql",
+          style: { color: "#000000" },
         },
         {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: {
-            color: "#FFCA28",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
-      ],
-    },
-    {
-      title: "UI/UX Design",
-      fileName: "DesignImg",
-      skills: [
-        "• Designing highly attractive user interfaces for mobile and web applications",
-        "• Cleared all three rounds of the Summer of Bitcoin Designer Track, designing Bitcoin wallet UX.",
-        "• Creating user flows, wireframes, and interactive prototypes to optimize user experience.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
-          },
+          skillName: "Airflow",
+          fontAwesomeClassname: "simple-icons:apacheairflow",
+          style: { color: "#017CEE" },
         },
       ],
     },
@@ -353,8 +333,9 @@ const degrees = {
       alt_name: "PST Bengaluru",
       duration: "2024 - 2028",
       descriptions: [
-        "• I contribute to various open source projects, helping build and improve tools that advance machine learning and artificial intelligence.",
-        "• Pursuing AI/ML Engineering with a strong focus on data engineering, distributed systems, and production AI applications.",
+        "• Pursuing AI/ML Engineering with a focus on healthcare AI: clinical decision support, explainability, and safe deployment of models on health data.",
+        "• Built HeartGuard AI and Sentinel Grid as end-to-end health-tech projects, from data validation and modelling through APIs, dashboards and model cards.",
+        "• Contributed 15+ merged pull requests to CNCF open-source projects (Meshery / Layer5).",
         "• During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
       ],
       website_link: "https://polariscampus.com/",
@@ -438,7 +419,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "My experience combines data engineering, Palantir Foundry, open-source software, and product thinking building systems that transform structured data into reliable operational applications.",
+    "My experience spans healthcare AI projects, open-source engineering and data-heavy product work: building models and pipelines that turn messy, sensitive data into decisions people can trust.",
   //header_image_path: "manOnTable.svg",
 
   sections: [
@@ -447,14 +428,14 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Open to Opportunities",
-          company: "Available for Internship & New Graduate Roles",
+          title: "Open to Healthcare AI/ML Roles",
+          company: "Available for Internships & Entry-Level Roles",
           company_url: "https://dungeonmasterji.me",
           logo_path: "animated_aditya.png",
           duration: "2026 – Present",
           location: "Bengaluru, India (Open to Relocation)",
           description:
-            "Third-year Computer Science student specializing in AI/ML with experience in Palantir Foundry and data engineering. Actively seeking internship and new graduate opportunities where I can build production-ready data platforms and operational AI systems.",
+            "B.Tech CSE (AI & ML) student building machine-learning systems for healthcare. Looking for internships and entry-level roles in clinical decision support, health analytics, medical NLP, or population health, where models are evaluated honestly and deployed safely.",
           color: "#000000",
         },
       ],
@@ -470,7 +451,7 @@ const experience = {
           duration: "Aug 2025 - Nov 2025",
           location: "Gurugram, India",
           description:
-            "Managed end-to-end content curation and optimization for 500+ travel listings across Maldives, Bali, and Dubai, leveraging Excel, CRM, SEO, and cross-functional collaboration to ensure high-quality, structured, and discoverable platform content.",
+            "Maintained 500+ inventory records and standardised catalog data across product, backend and sales teams for listings in the Maldives, Bali and Dubai. Seeing three suppliers describe the same item three different ways led me to build TravelStack, an automated validation and ETL pipeline: the same data-quality problem messy health records have.",
           color: "#000000",
         },
         // {
@@ -501,6 +482,17 @@ const experience = {
     {
       title: "Volunteerships",
       experiences: [
+        {
+          title: "Open Source Contributor",
+          company: "Meshery / Layer5 (CNCF)",
+          company_url: "https://meshery.io/",
+          logo_path: "layer5-dark-bg.svg",
+          duration: "Feb 2025 - Apr 2025",
+          location: "Remote",
+          description:
+            "Merged 15+ pull requests to Meshery, a cloud-native management tool used by 10,000+ developers: bug fixes, UI documentation and CI/CD improvements.",
+          color: "#00B39F",
+        },
         {
           title: "OpenAI AI Engineers Day",
           company: "OpenAI",
@@ -543,39 +535,51 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "I build data pipelines and operational systems that turn raw enterprise data into production-ready applications primarily using Palantir Foundry, PySpark, and SQL. These projects range from ontology-driven data platforms to backend services and open-source contributions.",
+    "I build healthcare AI systems end to end, from clinical risk models and population-health early warning to explainable alerts and the APIs and dashboards that put them in front of clinicians. Health-tech work comes first below, followed by GenAI, LLM-agent and data projects that use the same engineering and evaluation habits.",
   avatar_image_path: "projects_image.svg\\",
 };
 
 const publicationsHeader = {
-  title: "Project Walkthroughs",
+  title: "Live Demos & Walkthroughs",
   description:
-    "Detailed walkthroughs of Palantir Foundry and data engineering projects from design to implementation.",
+    "Try the deployed health-tech apps, or watch short walkthroughs of how they work.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
   data: [
     {
-      id: "foundry-step-8",
-      name: "Palantir Foundry Deep Dive",
-      createdAt: "2026-06-26T00:00:00Z",
-      description: "System design and exploration in Palantir Foundry.",
-      url: "https://youtu.be/d-LHmnQAXgU",
+      id: "sentinel-grid-demo",
+      name: "Sentinel Grid: 2-Minute Demo",
+      createdAt: "2026-11-10T00:00:00Z",
+      description:
+        "Walkthrough of the population-health early-warning dashboard, explainable alerts in English and Arabic, and n8n routing.",
+      url:
+        "https://drive.google.com/file/d/1Cm27mD-EoQFAY6ZNv8T0rtUJf-_Imxkw/view?usp=sharing",
     },
     {
-      id: "foundry-end-to-end-demo",
-      name: "Palantir Foundry End-to-End Application Demo",
-      createdAt: "2026-06-26T00:00:00Z",
-      description: "From data pipelines to Workshop in Palantir Foundry.",
-      url: "https://youtu.be/5m8b2riBlr0",
+      id: "sentinel-grid-live",
+      name: "Sentinel Grid: Live Dashboard & Backtest",
+      createdAt: "2026-11-10T00:00:00Z",
+      description:
+        "Live signal pillars, fused alerts, and an honest backtest scorecard against 11 real UAE heat, dust and flood events.",
+      url: "https://sentinel-grid-health.vercel.app",
     },
     {
-      id: "coming-soon",
-      name: "Coming Soon",
-      createdAt: "2026-08-16T00:00:00Z",
-      description: "Next technical walkthrough releasing on 16 August.",
-      url: "#",
+      id: "heartguard-live",
+      name: "HeartGuard AI: Live Demo",
+      createdAt: "2026-09-08T00:00:00Z",
+      description:
+        "Clinician-facing heart-disease risk tool backed by a voting-ensemble model (sensitivity 0.902, ROC AUC 0.908).",
+      url: "https://heart-disease-voting-ensemble.vercel.app/",
+    },
+    {
+      id: "supplychainos-live",
+      name: "SupplyChainOS: Live App",
+      createdAt: "2026-09-25T00:00:00Z",
+      description:
+        "Governed conversational analytics agent on Snowflake Cortex, evaluated on a 30-question gold set.",
+      url: "https://supplychainos-dungeonmasterji.streamlit.app/",
     },
   ],
 };
@@ -585,7 +589,7 @@ const contactPageData = {
   contactSection: {
     title: "Contact Me",
     description:
-      "I am available on almost every social media. You can message me, and I'll reply within 24 hours. Whether you're learning Palantir Foundry, exploring data engineering, or just curious about operational AI, I'd love to connect, discuss, and learn together.",
+      "I'm looking for internships and entry-level roles in healthcare AI/ML: clinical decision support, health analytics, medical NLP, or population health. Message me on any platform and I'll reply within 24 hours. I'm always happy to talk about explainable models, clinical evaluation, or building with health data.",
   },
   blogSection: {
     title: "Blogs",

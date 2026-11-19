@@ -63,3 +63,39 @@ body {
     line-height: normal;
   }
 }
+
+/* Skill-icon tooltips (react-bootstrap OverlayTrigger). Bootstrap's CSS is
+   not loaded, so without these rules the tooltip was laid out as a flex item
+   of <body>, shifting the whole page on hover. */
+.tooltip {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 1070;
+  display: block;
+  pointer-events: none;
+  font-family: "Google Sans Regular", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+.tooltip.fade {
+  transition: opacity 0.15s linear;
+}
+.tooltip:not(.show) {
+  opacity: 0;
+}
+.tooltip.show {
+  opacity: 1;
+}
+.tooltip .tooltip-arrow {
+  display: none;
+}
+.tooltip .tooltip-inner {
+  max-width: 220px;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  background-color: #084c61;
+  border-radius: 6px;
+}
